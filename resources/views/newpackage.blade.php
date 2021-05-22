@@ -35,6 +35,9 @@
             <label class="form-check-label" for={{$d['id']}} >
               {{$d['name']}}
             </label>
+            <div class="col-auto">
+              <input type="text" class="form-control" name = {{"value".$d['id']}} placeholder="مقدار">
+            </div>
           </div>
         @endforeach
 		</form>

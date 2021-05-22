@@ -23,6 +23,7 @@
         <h4>لیست ویژگی ها :</h4>
   		  @foreach ($d['atts'] as $a)
           <h5> {{$a['name']}}</h5>
+          <h5> {{$a['pivot']['value']}}</h5>
         @endforeach
       </div>
     @endforeach

@@ -16,6 +16,7 @@ class AttributePackage extends Migration
         Schema::create('attribute_package', function (Blueprint $table) {
             $table->unsignedBigInteger('package_id');
             $table->unsignedBigInteger('attribute_id');
+            $table->string('value');
 
 
             $table->foreign('package_id')
